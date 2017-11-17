@@ -13,9 +13,16 @@
 		C3D882A11FBEC8A800006343 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3D882A01FBEC8A800006343 /* Assets.xcassets */; };
 		C3D882A41FBEC8A800006343 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3D882A21FBEC8A800006343 /* LaunchScreen.storyboard */; };
 		C3D882A71FBEC8A800006343 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D882A61FBEC8A800006343 /* main.m */; };
+		C3D882AF1FBECB3C00006343 /* KSYMEMovieReader.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D882AE1FBECB3C00006343 /* KSYMEMovieReader.m */; };
+		C3D882B11FBECC4F00006343 /* xxx.MOV in Resources */ = {isa = PBXBuildFile; fileRef = C3D882B01FBECC4F00006343 /* xxx.MOV */; };
+		C3D882B31FBED72F00006343 /* xxx.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C3D882B21FBED72F00006343 /* xxx.mp3 */; };
+		E057A926E32504F00702D4C4 /* libPods-ALDecodeAudio.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AA1354E75955C82F9CC62BC7 /* libPods-ALDecodeAudio.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1A83603FDEBDB4587A692160 /* Pods-ALDecodeAudio.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ALDecodeAudio.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ALDecodeAudio/Pods-ALDecodeAudio.debug.xcconfig"; sourceTree = "<group>"; };
+		245A322AF32B074E46A721E8 /* Pods-ALDecodeAudio.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ALDecodeAudio.release.xcconfig"; path = "Pods/Target Support Files/Pods-ALDecodeAudio/Pods-ALDecodeAudio.release.xcconfig"; sourceTree = "<group>"; };
+		AA1354E75955C82F9CC62BC7 /* libPods-ALDecodeAudio.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ALDecodeAudio.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3D882941FBEC8A800006343 /* ALDecodeAudio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ALDecodeAudio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3D882971FBEC8A800006343 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C3D882981FBEC8A800006343 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -26,6 +33,10 @@
 		C3D882A31FBEC8A800006343 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C3D882A51FBEC8A800006343 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C3D882A61FBEC8A800006343 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C3D882AD1FBECB3C00006343 /* KSYMEMovieReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSYMEMovieReader.h; sourceTree = "<group>"; };
+		C3D882AE1FBECB3C00006343 /* KSYMEMovieReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSYMEMovieReader.m; sourceTree = "<group>"; };
+		C3D882B01FBECC4F00006343 /* xxx.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = xxx.MOV; sourceTree = "<group>"; };
+		C3D882B21FBED72F00006343 /* xxx.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = xxx.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +44,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E057A926E32504F00702D4C4 /* libPods-ALDecodeAudio.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		69536D1C93F207E32F207429 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1A83603FDEBDB4587A692160 /* Pods-ALDecodeAudio.debug.xcconfig */,
+				245A322AF32B074E46A721E8 /* Pods-ALDecodeAudio.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BD2A6D1193974B9C1E944D9B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AA1354E75955C82F9CC62BC7 /* libPods-ALDecodeAudio.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C3D8828B1FBEC8A800006343 = {
 			isa = PBXGroup;
 			children = (
 				C3D882961FBEC8A800006343 /* ALDecodeAudio */,
 				C3D882951FBEC8A800006343 /* Products */,
+				69536D1C93F207E32F207429 /* Pods */,
+				BD2A6D1193974B9C1E944D9B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +93,10 @@
 				C3D882981FBEC8A800006343 /* AppDelegate.m */,
 				C3D8829A1FBEC8A800006343 /* ViewController.h */,
 				C3D8829B1FBEC8A800006343 /* ViewController.m */,
+				C3D882AD1FBECB3C00006343 /* KSYMEMovieReader.h */,
+				C3D882AE1FBECB3C00006343 /* KSYMEMovieReader.m */,
+				C3D882B21FBED72F00006343 /* xxx.mp3 */,
+				C3D882B01FBECC4F00006343 /* xxx.MOV */,
 				C3D8829D1FBEC8A800006343 /* Main.storyboard */,
 				C3D882A01FBEC8A800006343 /* Assets.xcassets */,
 				C3D882A21FBEC8A800006343 /* LaunchScreen.storyboard */,
@@ -78,9 +113,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C3D882AA1FBEC8A800006343 /* Build configuration list for PBXNativeTarget "ALDecodeAudio" */;
 			buildPhases = (
+				D3A7AF45EAE78CF4818B9A92 /* [CP] Check Pods Manifest.lock */,
 				C3D882901FBEC8A800006343 /* Sources */,
 				C3D882911FBEC8A800006343 /* Frameworks */,
 				C3D882921FBEC8A800006343 /* Resources */,
+				9DB10A40B80FC7B9ECDDDE5D /* [CP] Embed Pods Frameworks */,
+				D8EA788505B0A78E661F2DF8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,11 +169,131 @@
 			files = (
 				C3D882A41FBEC8A800006343 /* LaunchScreen.storyboard in Resources */,
 				C3D882A11FBEC8A800006343 /* Assets.xcassets in Resources */,
+				C3D882B31FBED72F00006343 /* xxx.mp3 in Resources */,
 				C3D8829F1FBEC8A800006343 /* Main.storyboard in Resources */,
+				C3D882B11FBECC4F00006343 /* xxx.MOV in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9DB10A40B80FC7B9ECDDDE5D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ALDecodeAudio/Pods-ALDecodeAudio-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D3A7AF45EAE78CF4818B9A92 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ALDecodeAudio-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D8EA788505B0A78E661F2DF8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ALDecodeAudio/Pods-ALDecodeAudio-resources.sh",
+				"${PODS_ROOT}/GPUImage/framework/Resources/lookup.png",
+				"${PODS_ROOT}/GPUImage/framework/Resources/lookup_amatorka.png",
+				"${PODS_ROOT}/GPUImage/framework/Resources/lookup_miss_etikate.png",
+				"${PODS_ROOT}/GPUImage/framework/Resources/lookup_soft_elegance_1.png",
+				"${PODS_ROOT}/GPUImage/framework/Resources/lookup_soft_elegance_2.png",
+				"${PODS_ROOT}/../../../../KSY/KSYLive/KSYGPUFilter_iOS/KSYGPUResource/0_hongrun2.png",
+				"${PODS_ROOT}/../../../../KSY/KSYLive/KSYGPUFilter_iOS/KSYGPUResource/0_meibai.png",
+				"${PODS_ROOT}/../../../../KSY/KSYLive/KSYGPUFilter_iOS/KSYGPUResource/0_pink.png",
+				"${PODS_ROOT}/../../../../KSY/KSYLive/KSYGPUFilter_iOS/KSYGPUResource/0_skinColor.png",
+				"${PODS_ROOT}/../../../../KSY/KSYLive/KSYGPUFilter_iOS/KSYGPUResource/10_yangguang_night.png",
+				"${PODS_ROOT}/../../../../KSY/KSYLive/KSYGPUFilter_iOS/KSYGPUResource/11_hongrun.png",
+				"${PODS_ROOT}/../../../../KSY/KSYLive/KSYGPUFilter_iOS/KSYGPUResource/12_yangguang.png",
+				"${PODS_ROOT}/../../../../KSY/KSYLive/KSYGPUFilter_iOS/KSYGPUResource/13_ziran.png",
+				"${PODS_ROOT}/../../../../KSY/KSYLive/KSYGPUFilter_iOS/KSYGPUResource/14_amatorka.png",
+				"${PODS_ROOT}/../../../../KSY/KSYLive/KSYGPUFilter_iOS/KSYGPUResource/15_elegance.png",
+				"${PODS_ROOT}/../../../../KSY/KSYLive/KSYGPUFilter_iOS/KSYGPUResource/16_map_1977.png",
+				"${PODS_ROOT}/../../../../KSY/KSYLive/KSYGPUFilter_iOS/KSYGPUResource/17_21_26_27_overlay_map.png",
+				"${PODS_ROOT}/../../../../KSY/KSYLive/KSYGPUFilter_iOS/KSYGPUResource/17_26_blackboard_1024.png",
+				"${PODS_ROOT}/../../../../KSY/KSYLive/KSYGPUFilter_iOS/KSYGPUResource/17_amaro_map.png",
+				"${PODS_ROOT}/../../../../KSY/KSYLive/KSYGPUFilter_iOS/KSYGPUResource/18_brannan_blowout.png",
+				"${PODS_ROOT}/../../../../KSY/KSYLive/KSYGPUFilter_iOS/KSYGPUResource/18_brannan_contrast.png",
+				"${PODS_ROOT}/../../../../KSY/KSYLive/KSYGPUFilter_iOS/KSYGPUResource/18_brannan_luma.png",
+				"${PODS_ROOT}/../../../../KSY/KSYLive/KSYGPUFilter_iOS/KSYGPUResource/18_brannan_process.png",
+				"${PODS_ROOT}/../../../../KSY/KSYLive/KSYGPUFilter_iOS/KSYGPUResource/18_brannan_screen.png",
+				"${PODS_ROOT}/../../../../KSY/KSYLive/KSYGPUFilter_iOS/KSYGPUResource/19_23_31_32_vignette_map.png",
+				"${PODS_ROOT}/../../../../KSY/KSYLive/KSYGPUFilter_iOS/KSYGPUResource/19_earlybird_blowout.png",
+				"${PODS_ROOT}/../../../../KSY/KSYLive/KSYGPUFilter_iOS/KSYGPUResource/19_earlybird_map.png",
+				"${PODS_ROOT}/../../../../KSY/KSYLive/KSYGPUFilter_iOS/KSYGPUResource/19_earlybird_overlay_map.png",
+				"${PODS_ROOT}/../../../../KSY/KSYLive/KSYGPUFilter_iOS/KSYGPUResource/19_early_bird_curves.png",
+				"${PODS_ROOT}/../../../../KSY/KSYLive/KSYGPUFilter_iOS/KSYGPUResource/1_xiaoqingxin.png",
+				"${PODS_ROOT}/../../../../KSY/KSYLive/KSYGPUFilter_iOS/KSYGPUResource/20_edge_burn.png",
+				"${PODS_ROOT}/../../../../KSY/KSYLive/KSYGPUFilter_iOS/KSYGPUResource/20_hefe_gradient_map.png",
+				"${PODS_ROOT}/../../../../KSY/KSYLive/KSYGPUFilter_iOS/KSYGPUResource/20_hefe_map.png",
+				"${PODS_ROOT}/../../../../KSY/KSYLive/KSYGPUFilter_iOS/KSYGPUResource/20_hefe_metal.png",
+				"${PODS_ROOT}/../../../../KSY/KSYLive/KSYGPUFilter_iOS/KSYGPUResource/20_hefe_soft_light.png",
+				"${PODS_ROOT}/../../../../KSY/KSYLive/KSYGPUFilter_iOS/KSYGPUResource/21_hudson_background.png",
+				"${PODS_ROOT}/../../../../KSY/KSYLive/KSYGPUFilter_iOS/KSYGPUResource/21_hudson_map.png",
+				"${PODS_ROOT}/../../../../KSY/KSYLive/KSYGPUFilter_iOS/KSYGPUResource/22_inkwell_map.png",
+				"${PODS_ROOT}/../../../../KSY/KSYLive/KSYGPUFilter_iOS/KSYGPUResource/23_lomo_map.png",
+				"${PODS_ROOT}/../../../../KSY/KSYLive/KSYGPUFilter_iOS/KSYGPUResource/24_kelvin_map.png",
+				"${PODS_ROOT}/../../../../KSY/KSYLive/KSYGPUFilter_iOS/KSYGPUResource/25_nashville_map.png",
+				"${PODS_ROOT}/../../../../KSY/KSYLive/KSYGPUFilter_iOS/KSYGPUResource/26_rise_map.png",
+				"${PODS_ROOT}/../../../../KSY/KSYLive/KSYGPUFilter_iOS/KSYGPUResource/27_sierra_map.png",
+				"${PODS_ROOT}/../../../../KSY/KSYLive/KSYGPUFilter_iOS/KSYGPUResource/27_sierra_vignette.png",
+				"${PODS_ROOT}/../../../../KSY/KSYLive/KSYGPUFilter_iOS/KSYGPUResource/28_soft_light.png",
+				"${PODS_ROOT}/../../../../KSY/KSYLive/KSYGPUFilter_iOS/KSYGPUResource/28_sutro_curves.png",
+				"${PODS_ROOT}/../../../../KSY/KSYLive/KSYGPUFilter_iOS/KSYGPUResource/28_sutro_edge_burn.png",
+				"${PODS_ROOT}/../../../../KSY/KSYLive/KSYGPUFilter_iOS/KSYGPUResource/28_sutro_metal.png",
+				"${PODS_ROOT}/../../../../KSY/KSYLive/KSYGPUFilter_iOS/KSYGPUResource/29_toaster_color_shift.png",
+				"${PODS_ROOT}/../../../../KSY/KSYLive/KSYGPUFilter_iOS/KSYGPUResource/29_toaster_curves.png",
+				"${PODS_ROOT}/../../../../KSY/KSYLive/KSYGPUFilter_iOS/KSYGPUResource/29_toaster_metal.png",
+				"${PODS_ROOT}/../../../../KSY/KSYLive/KSYGPUFilter_iOS/KSYGPUResource/29_toaster_overlay_map_warm.png",
+				"${PODS_ROOT}/../../../../KSY/KSYLive/KSYGPUFilter_iOS/KSYGPUResource/29_toaster_soft_light.png",
+				"${PODS_ROOT}/../../../../KSY/KSYLive/KSYGPUFilter_iOS/KSYGPUResource/2_liangli.png",
+				"${PODS_ROOT}/../../../../KSY/KSYLive/KSYGPUFilter_iOS/KSYGPUResource/30_valencia_gradient_map.png",
+				"${PODS_ROOT}/../../../../KSY/KSYLive/KSYGPUFilter_iOS/KSYGPUResource/30_valencia_map.png",
+				"${PODS_ROOT}/../../../../KSY/KSYLive/KSYGPUFilter_iOS/KSYGPUResource/31_walden_map.png",
+				"${PODS_ROOT}/../../../../KSY/KSYLive/KSYGPUFilter_iOS/KSYGPUResource/32_xpro_map.png",
+				"${PODS_ROOT}/../../../../KSY/KSYLive/KSYGPUFilter_iOS/KSYGPUResource/3_tianmeikeren.png",
+				"${PODS_ROOT}/../../../../KSY/KSYLive/KSYGPUFilter_iOS/KSYGPUResource/4_huaijiu.png",
+				"${PODS_ROOT}/../../../../KSY/KSYLive/KSYGPUFilter_iOS/KSYGPUResource/5_landiao.png",
+				"${PODS_ROOT}/../../../../KSY/KSYLive/KSYGPUFilter_iOS/KSYGPUResource/6_laozhaop.png",
+				"${PODS_ROOT}/../../../../KSY/KSYLive/KSYGPUFilter_iOS/KSYGPUResource/7_yinghua.png",
+				"${PODS_ROOT}/../../../../KSY/KSYLive/KSYGPUFilter_iOS/KSYGPUResource/8_yinghua_night.png",
+				"${PODS_ROOT}/../../../../KSY/KSYLive/KSYGPUFilter_iOS/KSYGPUResource/9_hongrun_night.png",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ALDecodeAudio/Pods-ALDecodeAudio-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C3D882901FBEC8A800006343 /* Sources */ = {
@@ -143,6 +301,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C3D8829C1FBEC8A800006343 /* ViewController.m in Sources */,
+				C3D882AF1FBECB3C00006343 /* KSYMEMovieReader.m in Sources */,
 				C3D882A71FBEC8A800006343 /* main.m in Sources */,
 				C3D882991FBEC8A800006343 /* AppDelegate.m in Sources */,
 			);
@@ -276,11 +435,13 @@
 		};
 		C3D882AB1FBEC8A800006343 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A83603FDEBDB4587A692160 /* Pods-ALDecodeAudio.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZGJ54Q7R45;
 				INFOPLIST_FILE = ALDecodeAudio/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ksyun.ALDecodeAudio;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -290,11 +451,13 @@
 		};
 		C3D882AC1FBEC8A800006343 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 245A322AF32B074E46A721E8 /* Pods-ALDecodeAudio.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZGJ54Q7R45;
 				INFOPLIST_FILE = ALDecodeAudio/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ksyun.ALDecodeAudio;
 				PRODUCT_NAME = "$(TARGET_NAME)";
